@@ -11,4 +11,4 @@ patchesStrategicMerge:
 
 images:
   - name: shivawmm1810/task-manager-app
-    newTag: latest
+    newTag: "eb41b7fcfe49d014579831c500a8f221bab1ba75"
