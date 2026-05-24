@@ -1,0 +1,27 @@
+apiVersion: apps/v1
+kind: Deployment
+
+metadata:
+  name: task-manager-app
+  namespace: kustomize-flux-demo
+
+spec:
+  replicas: 1
+
+  selector:
+    matchLabels:
+      app: task-manager-app
+
+  template:
+    metadata:
+      labels:
+        app: task-manager-app
+
+    spec:
+      containers:
+        - name: task-manager-app
+
+          image: shivawmm1810/task-manager-app:latest
+
+          ports:
+            - containerPort: 3000
